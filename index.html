@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="estilo.css">
     <title>Encriptador</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
+
+    <header>
+        <img src="./img/cadeado.png" alt="figura chave e cadeado">
+    </header>
     
-    <script src="estilo.css"></script>
+    <main>
+        <section>
+            <textarea id="entrada" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+            <div class="botoes">
+                <button class="encriptar">encriptar</button>
+                <button class="desencriptar">desencriptar</button>
+            </div>
+        </section>
+    
+        <section>
+            <textarea id="saida" cols="30" rows="10"></textarea>
+            <div>
+                <button class="copiar">copiar</button>
+            </div>
+        </section>
+    </main>    
 </body>
 </html>
